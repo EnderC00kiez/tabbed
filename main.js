@@ -34,11 +34,13 @@ function cloakTab() {
         document.getElementsByTagName('head')[0].appendChild(link);
     }
     // ask hidepage name
-    var hidepage = prompt("Enter name of page", "Google");
+    var hidepage = prompt("Enter name of page", "Example Domain");
     if (hidepage != null) {
         // set title
         document.title = hidepage;
     }
+    // ask hidepage url
+    cloakPage = prompt("Enter URL of page", cloakPage);
 }
 
 
