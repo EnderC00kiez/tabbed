@@ -44,7 +44,7 @@ function cloakTab() {
 
 // on key combo
 document.addEventListener('keydown', function(event) {
-    if (event.altKey && event.key === '`') {
+    if (event.altKey && event.key === 'h') {
         togglePage();
     }
 });
