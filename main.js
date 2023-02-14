@@ -9,10 +9,12 @@ function togglePage() {
     var bingPage = document.getElementById("bing-page");
     if (isCloaked) {
         bingPage.src = origPage;
+        isCloaked = false;
     }
     else {
         origPage = bingPage.src;
         bingPage.src = cloakPage;
+        isCloaked = true;
     }
 }
 function navigateToPage() {
